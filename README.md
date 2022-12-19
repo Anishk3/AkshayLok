@@ -9,8 +9,9 @@ AkshayLok is a Renewable resource management software that uses blockchain techn
 ###  Index Terms
 - **Distribution companies (DISCOMs),**
 - **Smart Contract, Blockchain Technology,**
-- **Interplanetary File System (IPFS), **
+- **Interplanetary File System (IPFS),**
 - **Renewable Energy, Smart Grid.**
+
 
 ## I. Introduction
 Efficient energy management has never been more crucial than it is today, and renewable energy is undoubtedly the future of the industry. Here Blockchain can change the power balance between consumers and centralized power authorities. The booming market in Distributed Energy Resources (DER) like solar photovoltaic systems (PV), batteries, microgrids, and embedded networks has moved the power balance from central authorities to the edges of the grid, to where citizens have control. And it is not just about controlling the cost of energy consumption, it reflects people’s desires that their energy supplies are more sustainable, more socially-responsible, more local, more resilient, and more democratic.
@@ -18,7 +19,7 @@ Efficient energy management has never been more crucial than it is today, and re
 All that is needed to move the revolution into the mainstream is a model for energy trading that takes control out of the hands of central players and puts everyday citizens in charge of a co-created energy future. DISCOMs (distribution companies) will play a key role in the expansion of RTS (roof-top solar
 system) as DISCOMs have direct contact with the end user and provide approval for installation, manage the distribution network and also have a billing interface with rooftop owners. We as a DISCOM will be more transparent, secure, and faster than most existing DISCOMS because Existing trading platforms require third-party settlement and reconciliation of millions of transactions between hundreds of thousands of traders across 5-minute trading intervals and a central player is necessary for taking control of all parties data, prescribing fees, requiring trust, proving the accuracy and binding the market up in red tape and bureaucracy.
 
-** The main contributions of this project are threefold as follows: **
+**The main contributions of this project are threefold as follows:**
 - Removing the dependency on big companies and creating a systematic distribution channel for renewable energy.
 - Providing everyone with an opportunity to produce renewable energy and sell it to the government.
 - Removing the dependency on non-renewable energy.
@@ -38,3 +39,17 @@ Given below is a graph that depicts EV sales in the last three years.
 - **Between 22 to 140 million by 2030.**
 
 The brisk market for Distributed Energy Resources (DER) such as solar photovoltaic systems (PV), batteries, microgrids, and embedded networks has shifted power away from central authorities and toward the grid's edges, where citizens have control. And it is not just about lowering the cost of energy consumption; it is also a reflection of people's desires for more sustainable, socially responsible, local, resilient, and democratic energy supplies. All that is required to bring the revolution into the mainstream is an energy trading model that removes control from the hands of central players and places ordinary citizens in charge of a co-created energy future
+
+
+##  III. Background Study and Technology Gaps Identified
+Vertically-integrated energy companies sit in the middle of the system, like spiders spinning a web out to the last consumer requesting a connection, they decide where and when to build big powerplants, they decide how to bridge the distance between generators and loads, and they kept the system in balance by applying pressure on the central entity.
+
+While progressive utilities and regulators attempt to position themselves as consumer-focused or consumer-centric, even the most progressive is simply rephrasing a narrative that categorizes citizens as consumers. Consumers are fed a steady diet of price and product while clinging to the umbilicus of the power network. Control, certainty, and economic independence are all costs associated with energy security.
+
+In 2012 in New York City, Hurricane Sandy destroyed the century-old concept of utility power supplies and heralded a new era of distributed energy supplies that value resilience over tradition. An energy supply crunch tied to the war in Ukraine could cause widespread blackouts in the European Union this winter. The world is lacking the infrastructure of proper management of distributed power resources where each consumer can become a retailer. This will not only reduce the dependency on non renewable energy sources but also help a country to become self-reliable in the power sector. There is a dire need for discoms in the renewable energy sector.
+
+The Government of India has laid the baseline for the development of renewable energy. As of July 31, 2022, India’s installed renewable energy capacity (including hydro) stood at 161.29 GW, representing 39.91% of the overall installed power capacity. Solar energy is estimated to contribute 57.97 GW, followed by 40.89 GW from wind power, 10.68 GW from biomass, 4.89 GW from small hydropower, and 46.85 GW from hydropower. 
+
+*But there is no model for the consumer to sell their renewable energy to the grid which will lead to benefits to both parties. Users get one more source of income and the government gets a backup source of energy which will ultimately reduce dependence on non-renewable resources and consumers can get electricity at cheap rates. Companies looking to implement blockchain technology into wholesale electricity distribution focus on connecting end-users with the grid. Blockchain technologies combined with IoT devices enable consumers to trade and purchase energy directly from the grid rather than from retailers.*
+
+![Alt text](./Images/img2.JPG?raw=true)
