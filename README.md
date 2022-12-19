@@ -53,3 +53,90 @@ The Government of India has laid the baseline for the development of renewable e
 *But there is no model for the consumer to sell their renewable energy to the grid which will lead to benefits to both parties. Users get one more source of income and the government gets a backup source of energy which will ultimately reduce dependence on non-renewable resources and consumers can get electricity at cheap rates. Companies looking to implement blockchain technology into wholesale electricity distribution focus on connecting end-users with the grid. Blockchain technologies combined with IoT devices enable consumers to trade and purchase energy directly from the grid rather than from retailers.*
 
 ![Alt text](./Images/img2.JPG?raw=true)
+
+
+## IV. Basic Concepts & Technology
+### Blockchain Technology :
+Blockchain is a software innovation for establishing digital trust between users facilitating transactions of value, over a network. The blockchain enables trust to be distributed throughout a network, without the need for a central intermediary to track, verify and approve the digital exchange of value. [2] However, this is proving to be expensive, slow, and attackable. By functioning as a decentralized distributed database with a continuously expanding list of entries called blocks, the blockchain solves these problems. While blockchain technology is still in its infancy, existing implementations demonstrate that it has the potential to be better, more efficient, and more secure than current systems. As a result, banks and governments throughout the world are starting to experiment with it.
+
+### Smart Contracts :
+On-chain computer code, often known as "Smart Contracts," is a type of computer protocol that eliminates the need for a contractual clause by facilitating, verifying, or enforcing the performance of a contract. The logic of contractual terms is frequently imitated in smart contracts. Smart contracts eliminate the need for a middleman by enabling the transparent, conflict-free exchange of money, assets, shares, and anything else of value. 
+
+A procedure typically entails payment to a middleman, governmental body, bank, attorney, or notary, followed by a processing period before receiving goods or services. However, everything can be automated thanks to smart contract technology. Smart contract technology can be compared to that of an automated vending machine. With a vending machine, money is deposited into the vending machine and the desired item drops for collection provided that the correct amount is deposited. 
+
+Similarly, with a smart contract, funds are deposited into escrow on the blockchain in exchange for the receipt of a transfer of a token (such as a digital certificate of title for a home), which is instantly transferred into a counterparty's hands once conditions are met.Similar to a typical contract, smart contracts specify the terms and conditions of an agreement and also give a means of enforcing those responsibilities.
+
+### IPFS :
+The Interplanetary File System (IPFS) is a distributed file storage protocol that allows computers allover the world to store and serve files as part of a massive peer-to-peer network [3]. Any computer on the planet can download the IPFS software and begin hosting and serving files. If someone installs IPFS on their computer and uploads a file to the IPFS network, that file can be viewed and downloaded by anyone else running IPFS around the world.
+
+
+## V. Proposed Model / Tool
+We as a DISCOM will be more transparent, secure, and faster than most existing DISCOMS because Existing trading platforms require third-party settlement and reconciliation of millions of transactions between hundreds of thousands of traders across 5- minute trading intervals and a central player is necessary for taking control of all parties data, prescribing fees, requiring trust, proving the accuracy and binding the market up in red tape and bureaucracy.
+
+We will use efficient technologies like a distributed ledger and smart grid system [4], which will free up huge corporations from their monopoly and provide regular people the chance to not only become independent but also earn more cash. To maintain the legitimacy of the contract, a smart contract will be created and safely maintained on IPFS, which depends on cryptographic hashes that are simple to put on a blockchain. However, users cannot share files with specific individuals via IPFS.
+
+The strategy we outlined below enables nations wealthy in renewable resources (such as tropical and subtropical nations with easy access to solar energy) to be self-sufficient and independent of traditional energy sources. Additionally, ending the monopoly.
+
+![Alt text](./Images/img3.JPG?raw=true)
+
+A user will log in to our website using their wallet (metamask), after which they will be prompted to fill out a form clearly stating the terms and conditions laid out by the governing body, and an agreement will be reached between the two parties, which will be publicly available and anyone can look it up. In our backend, after the user submits the form, a smart contract will be created whose information is kept in IPFS, giving us a unique hash that is stored in the blockchain network. Anyone can access the content of the agreement using that hash, which will not only increase transparency but also builds trust between them.
+
+## V. Implementation and Results
+
+### Gathering of Data :
+Users enter the required data like their personal details, type of plant (eg:- rooftop solar system), the technology used to generate energy, and average energy generated monthly and annually in the website.
+
+### Preprocessing :
+After receiving the details, these details are reviewed by the smart contract. The smart contract checks whether the criteria given by the government both financial and technical are met or not. If the smart contract accepts the information, the digital certificate is signed between the government and the client which is reviewed annually.
+
+### Transactions :
+All transactions between the government and client are done through Metamask wallet including the fee generated for deploying the smart contract.
+
+### Data Analysis and Storage:
+Entire details of the client as well as the information in the smart contract is stored in the IPFS. IPFSwill generate a unique hash specific to the transaction which will be stored in the blockchain network.
+
+### Web-App Development :
+- FrontEnd: 
+		For Frontend, we will use HTML5, CSS3, and ReactJS.
+- Backend: 
+		To develop smart contracts we use Solidity, to connect smart contracts with the frontend we will use EtherJS and NodeJS, to store data we use IPFS, to conduct transactions we use Metamask and all the information will be deployed in the Polygon Network.
+
+### Deployment :
+To host the Website, we will be using Heroku.
+
+Below is the DFD  ( Data Flow Diagram )
+
+![Alt text](./Images/img4.JPG?raw=true)
+
+## VI. Key Findings
+
+- **The Government, on 30th December 2015, approved a program “Grid Connected Rooftop and Small Solar Power Plants Programme‟ for the installation of 4,200 MW RTS plants in the country by the year 2019-20, of which 2,100 MW was through CFA and balance 2,100 MW was without CFA.**
+- **It aims to achieve a cumulative capacity of 40,000 MW from Rooftop Solar Projects by the year 2022.**
+- **To create an enabling environment for the supply of solar power from rooftops and small plants to the grid.**
+- **This scheme is being implemented in the state by distribution companies (DISCOMs).**
+
+
+## VII. Estimated Benefits to Society and Generation of Income
+
+![Alt text](./Images/img5.JPG?raw=true)
+
+
+The four major benefits for the energy sector are **:-**
+- **Access to Affordable Energy.**
+- **Reduced Cost of Utility Bills.**
+- **Low Transaction Costs.**
+- **New Opportunity for Communication among Energy Devices.**
+
+It gives an additional value proposition that could spur even more investment in distributed renewables and a new era of network management is presented by a network that enables users to derive profit from their DER investment. Ever-increasing levels of automation and resilience will be driven by this new paradigm, not by a few large-scale centralized investments, but by millions of small-scale dispersed investments.
+
+## VI. Conclusion
+A decentralized security model for renewable energy management, using the IPFS, has been proposed. Our proposed model makes sure that the excess energy produced by an entity does not go in waste, rather they can monetize that energy by selling it to a merchant. The focus of this project is that blockchain is set to transform the renewable energy industry in many ways from certifying the source of green energy by allocating generation assets to a specific point of consumption to making energy grids more accessible through data-sharing in real-time and through enabling a transaction between two parties.
+
+## VII. References
+[1] World Bank, “Power Sector Distortions Cost India Billions,” 18 December 2018. [Online]. Available: https://www.worldbank.org/en/news/feature/2018/12/17/new-report-power-sectordistortions-cost-india-billions.
+
+[2] Paradigm, “Blockchain technology for the renewable energy sector: A comprehensive study,” 8 june 2022. [Online]. Available: https://medium.com/paradigm-research/blockchain-technologyfor-the-renewable-energy-sector-a-comprehensive-study-836da850d519.
+
+[3] Cloudflare Docs, “Interplanetary File System (IPFS),” October 2022. [Online]. Available: https://developers.cloudflare.com/web3/ipfsgateway/concepts/ipfs/#:~:text=The%20Interplanetary%20File%20System%20.
+
+[4] National Smart Grid Mission, “Smart Grid,” 04 November 2022. [Online]. Available: https://www.nsgm.gov.in/en/smart-grid.
