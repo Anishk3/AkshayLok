@@ -1,7 +1,7 @@
 import './App.css';
 
 import { Footer } from './components';
-import { Home, SignUp, Login } from './pages';
+import { Home, SignUp, Login, StartingPage } from './pages';
 import { onAuthStateChanged } from "firebase/auth";
 import { BrowserRouter as Routers, Route, Routes } from 'react-router-dom';
 
@@ -26,13 +26,14 @@ function App() {
 
       <Routers>
         <Routes>
-          <Route path='/' element = {<Home/>} ></Route>
-          <Route path='/login' element = {<Login/>} ></Route>
-          <Route path='/signup' element = {<SignUp/>} ></Route>
+          <Route path='/' element = {<Home/>}> </Route>
+          <Route path='/login' element = {<Login/>}> </Route>
+          <Route path='/signup' element = {<SignUp/>}> </Route>
+          <Route path='/starting' element = {<StartingPage/>}> </Route>
         </Routes>
       </Routers>
       
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }
