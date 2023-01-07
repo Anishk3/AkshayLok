@@ -13,7 +13,7 @@ function App() {
   onAuthStateChanged(auth, (user) => {
     if (user) {
       const uid = user.uid;
-      console.log("user uid", uid)
+      console.log("user uid", user)
       // ...
     } else {
       console.log('User is signed out')
@@ -27,8 +27,8 @@ function App() {
       <Routers>
         <Routes>
           <Route path='/' element = {<Home/>}> </Route>
-          <Route path='/login' element = {<Login/>}> </Route>
-          <Route path='/signup' element = {<SignUp/>}> </Route>
+          <Route path='/login' element = {<Login login={false} />}> </Route>
+          <Route path='/signup' element = {<SignUp login={false} />}> </Route>
           <Route path='/starting' element = {<StartingPage/>}> </Route>
         </Routes>
       </Routers>

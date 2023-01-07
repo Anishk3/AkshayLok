@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   font-family: "Euclid Circular A", "Poppins";
-  background: #6733bd;
+  background: var(--color-light);
   color: #f9f9f9;
 }
 
@@ -18,8 +18,8 @@
   width: 80vw;
   height: 80vh;
   border-radius: 16px;
-  background: url("../../assets/img/bg.webp");
-  background-size: 110%;
+  background: url("../../assets/img/city3.webp");
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   transition: 0.5s;
@@ -35,7 +35,7 @@
   padding: 10px 30px;
   border-radius: 50px;
   border: 0;
-  background: #221e6f;
+  background: #000000;
   color: #f9f9f9;
   font-family: inherit;
   cursor: pointer;

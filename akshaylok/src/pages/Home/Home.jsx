@@ -1,12 +1,13 @@
 
-import { Navbar } from "../../components"
+import { Navbar, ExpandingWindow, Infinity } from "../../components"
 
 function Home() {
   return (
-    <>
-        <Navbar/>
-        <div>Home</div>
-    </>
+    <div className="home">
+        <Navbar login={true} />
+        <ExpandingWindow/>
+        <Infinity/>
+    </div>
   )
 }
 
