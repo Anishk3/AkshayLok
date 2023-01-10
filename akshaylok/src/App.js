@@ -1,7 +1,7 @@
 import './App.css';
 
 import { Footer } from './components';
-import { Home, SignUp, Login, StartingPage } from './pages';
+import { Home, SignUp, Login, StartingPage, About } from './pages';
 import { onAuthStateChanged } from "firebase/auth";
 import { BrowserRouter as Routers, Route, Routes } from 'react-router-dom';
 
@@ -30,6 +30,7 @@ function App() {
           <Route path='/login' element = {<Login login={false} />}> </Route>
           <Route path='/signup' element = {<SignUp login={false} />}> </Route>
           <Route path='/starting' element = {<StartingPage/>}> </Route>
+          <Route path='/about' element = {<About/>}> </Route>
         </Routes>
       </Routers>
       
