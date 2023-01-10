@@ -3,6 +3,7 @@ import Navbar from "./Navbar/Navbar";
 import ExpandingWindow from "./ExpandingWindow/ExpandingWindow";
 import Infinity from "./Infinity/Infinity";
 import Cards from "./Cards/Cards";
+import Testimonials from "./Testimonials/Testimonials";
 
 
 export {
@@ -10,5 +11,6 @@ export {
     Navbar,
     ExpandingWindow,
     Infinity,
-    Cards
+    Cards,
+    Testimonials
 }

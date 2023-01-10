@@ -4,6 +4,7 @@ import React from "react";
 
 function Cards() {
   return (
+
     <div className="priceCard">
       <div class="cards">
         <div class="card shadow">
@@ -50,6 +51,7 @@ function Cards() {
         </div>
       </div>
     </div>
+    
   );
 }
 

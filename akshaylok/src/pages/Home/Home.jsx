@@ -1,5 +1,5 @@
 
-import { Navbar, ExpandingWindow, Infinity, Cards } from "../../components"
+import { Navbar, ExpandingWindow, Infinity, Cards, Testimonials } from "../../components"
 
 function Home() {
   return (
@@ -8,6 +8,7 @@ function Home() {
         <ExpandingWindow/>
         <Infinity/>
         <Cards/>
+        <Testimonials/>
     </div>
   )
 }
