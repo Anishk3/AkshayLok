@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.about{
+    overflow-x: hidden;
+}
+
+.about .about-text {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1615209853186-e4bd66602508?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+    font-family: 'Poppins', sans-serif;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .about-text .text-area{
+    position: relative;
+    padding: 20px 50px;
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    font-size: 64px;
+    color: rgb(84, 84, 84); 
+    top: -40px;
+    font-weight: 500;
+}
+
+.about .about-text .about-body{
+    width: 80%;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px 30px;
+    color: rgb(243, 241, 241);
+    position:relative;
+    top:20px;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.about .about-text .Heading{
+    display: inline;
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    position: relative;
+    color: rgb(84, 84, 84);
+    top: -3%;
+    left:34%
+}
+
+.about .about-text .desc{
+    display: inline;
+    width: 100px;
+    backdrop-filter: blur(1px);
+    color: rgb(84, 84, 84);  
+    position: relative;
+    top: 43%;
+    left:0%;
+}
