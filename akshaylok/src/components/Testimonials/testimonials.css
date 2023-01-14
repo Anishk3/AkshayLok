@@ -1,0 +1,39 @@
+.testimonials{
+    background: transparent;
+}
+
+.testimonials .row1{
+        display: inline-flex;
+        padding-top: 90px;
+        margin-left: 275px;
+}
+
+.testimonials .row2{
+        display: inline-flex;
+        margin-left: 275px;
+}
+
+.testimonials .partner_img {
+    width: 250px;
+    opacity: 0.5;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    padding: 15px;
+}
+
+.testimonials .partner{
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.testimonials .partner_img:hover{    
+    transform: scale(1.08, 1.08);
+    opacity:0.9;
+}
+
+/* .testimonials .img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+
+} */

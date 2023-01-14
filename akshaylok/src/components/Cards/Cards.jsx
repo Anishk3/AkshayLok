@@ -6,6 +6,7 @@ function Cards() {
   return (
 
     <div className="priceCard">
+      <div class="heads">Our Subscriptions</div>
       <div class="cards">
         <div class="card shadow">
           <ul>
