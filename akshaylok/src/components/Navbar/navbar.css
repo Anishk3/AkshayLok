@@ -34,7 +34,7 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
-  height: 50px;
+  height: 60px;
   overflow: hidden;
 }
 

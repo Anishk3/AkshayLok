@@ -1,12 +1,13 @@
 
-import { Navbar, ExpandingWindow, Infinity, Cards, Testimonials } from "../../components"
+import { Navbar,Site , ExpandingWindow, Infinity, Cards, Testimonials } from "../../components"
 
 function Home() {
   return (
     <div className="home">
         <Navbar login={true} />
+        <Site/>
         <ExpandingWindow/>
-        <Infinity/>
+        {/* <Infinity/> */}
         <Cards/>
         <Testimonials/>
     </div>
