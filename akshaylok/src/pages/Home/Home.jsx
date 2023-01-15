@@ -1,6 +1,8 @@
 
 import { Navbar,Site , ExpandingWindow, Infinity, Cards, Testimonials } from "../../components"
 
+
+
 function Home() {
   return (
     <div className="home">
