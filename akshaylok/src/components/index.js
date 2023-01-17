@@ -5,7 +5,7 @@ import ExpandingWindow from "./ExpandingWindow/ExpandingWindow";
 import Infinity from "./Infinity/Infinity";
 import Cards from "./Cards/Cards";
 import Footer from "./Footer/Footer";
-
+import Contact from "./Contact/Contact";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 
 export {
     Navbar,
@@ -14,5 +14,6 @@ export {
     ExpandingWindow,
     Infinity,
     Cards,
+    Contact,
     Footer,
 }
