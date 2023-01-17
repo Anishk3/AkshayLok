@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.registrationForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+
+    
+}
+
+.registrationForm .main{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 100px;
+    padding: 80px 60px;
+    box-shadow: 0px 0px 30px 1px rgba(158, 158, 158, 0.75);
+    border-radius: 15px;
+    width: 720px;
+}
+
+.registrationForm .main h1{
+    align-self: flex-start;
+    margin-bottom: 30px;
+    color: var(--color-blue);
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+
+.registrationForm .main div{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.registrationForm .main div label{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: rgb(55, 55, 55);
+}
+
+.registrationForm .main .first-input span{
+    font-size: 12px;
+    color: grey;
+    position: relative;
+    top: -8px;
+}
+
+
+.registrationForm .main div input{
+    align-self: center;
+    width: 50%;
+    margin-right: 100px;
+    border: 1px solid rgb(151, 191, 255);
+    padding: 8px 10px ;
+    border-radius: 10px;
+    color: var(--color-blue)
+}
+
+.registrationForm .main div input:focus{
+    outline:none;
+    box-shadow: 0px 0px 8px 1px rgba(184, 222, 255, 0.75);
+  }
+
+
+.registrationForm .btn {
+    /* justify-content: center; */
+    margin-top: 40px;
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.registrationForm .btn:hover,
+.registrationForm .btn:focus {
+    color: #fff;
+    outline: 0;
+}
+
+.registrationForm .third {
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    transition: all 350ms ease-in-out;
+}
+.registrationForm .third:hover {
+    box-shadow: 0 0 3px 0 #3498db inset, 
+                0 0 3px 1px #3498db;
+
+    color: #3498db;
+}

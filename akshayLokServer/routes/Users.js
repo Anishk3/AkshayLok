@@ -130,6 +130,29 @@ router.put("/transaction", async (req, res) => {
 
 
 
+router.get("/transaction", async(req, res)=>{
+  const userEmail = req.body.email;
+
+  try {
+    
+    const data = await User.findOne({
+      email: userEmail
+    })
+
+    res.status(200).json({
+      ...data._doc
+    })
+
+  } catch (error) {
+    
+  }
+
+})
+
+
+
+
+
 router.get("/user", async (req, res) => {
   const email = req.body.email;
 
