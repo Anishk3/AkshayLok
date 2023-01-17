@@ -1,46 +1,73 @@
-import React from 'react'
-import './trans.css'
+import { useEffect, useContext, useState } from "react";
+import "./trans.css";
+import axios from "../../hooks/axios";
+
+import { AuthContext } from "../../context/authContext";
+import { Navbar } from '../../components'
+
 
 function Trans() {
-return (
+  const { data } = useContext(AuthContext);
+  const [transactions, setTransactions] = useState(null);
+
+  useEffect(() => {
+    const fetchTrans = async () => {
+      console.log(data.email);
+      const responseData = await axios.post("/user", {
+        email: data.email,
+      });
+
+      console.log(responseData.data);
+      for (let i in responseData.data) {
+        console.log(responseData.data[i]);
+      }
+      setTransactions(responseData.data);
+    };
+
+    fetchTrans();
+  }, []);
+
+  return (
     <div className="Trans">
-        <div class="container">
-  <h2>Transaction History</h2>
-  <ul class="responsive-table">
-    <li class="table-header">
-      <div class="col col-1">Transaction Id</div>
-      <div class="col col-2">Contract Address</div>
-      <div class="col col-3">Date Of Agreement</div>
-      <div class="col col-4">Tenure</div>
-    </li>
-    <li class="table-row">
-      <div class="col col-1" data-label="Job Id">42235</div>
-      <div class="col col-2" data-label="Customer Name">John Doe</div>
-      <div class="col col-3" data-label="Amount">$350</div>
-      <div class="col col-4" data-label="Payment Status">Pending</div>
-    </li>
-    <li class="table-row">
-      <div class="col col-1" data-label="Job Id">42442</div>
-      <div class="col col-2" data-label="Customer Name">Jennifer Smith</div>
-      <div class="col col-3" data-label="Amount">$220</div>
-      <div class="col col-4" data-label="Payment Status">Pending</div>
-    </li>
-    <li class="table-row">
-      <div class="col col-1" data-label="Job Id">42257</div>
-      <div class="col col-2" data-label="Customer Name">John Smith</div>
-      <div class="col col-3" data-label="Amount">$341</div>
-      <div class="col col-4" data-label="Payment Status">Pending</div>
-    </li>
-    <li class="table-row">
-      <div class="col col-1" data-label="Job Id">42311</div>
-      <div class="col col-2" data-label="Customer Name">John Carpenter</div>
-      <div class="col col-3" data-label="Amount">$115</div>
-      <div class="col col-4" data-label="Payment Status">Pending</div>
-    </li>
-  </ul>
-</div>
+      <Navbar login={true} />
+      <div class="container">
+        <h2>Transaction History</h2>
+        <ul class="responsive-table">
+          <li class="table-header">
+            <div class="col col-1">Transaction Id</div>
+            <div class="col col-2">Contract Address</div>
+            <div class="col col-3">Date Of Agreement</div>
+            <div class="col col-4">Tenure</div>
+            <div class="col col-4"></div>
+          </li>
+
+          {transactions &&
+            transactions.transactions.map((transaction) => {
+              return (
+                <li class="table-row">
+                  <div class="col col-1" data-label="Job Id">
+                    {transaction.transactionHash}
+                  </div>
+                  <div class="col col-2" data-label="Customer Name">
+                    {transaction.contractAddr}
+                  </div>
+                  <div class="col col-3" data-label="Amount">
+                    {transaction.details.dateOfStarting}
+                  </div>
+                  <div class="col col-4" data-label="Payment Status">
+                    {transaction.details.years}
+                  </div>
+
+                  <div class="col col-4" data-label="Payment Status">
+                    <a href={`https://goerli.etherscan.io/tx/${transaction.transactionHash}`} target="_blank" >View Details</a>
+                  </div>
+                </li>
+              );
+            })}
+        </ul>
+      </div>
     </div>
-)
+  );
 }
 
-export default Trans
+export default Trans;

@@ -18,9 +18,6 @@ function App() {
 
   onAuthStateChanged(auth, (user) => {
     if (user) {
-      console.log("user uid", user)
-      console.log("user name : ", user.displayName)
-      console.log("user email : ", user.email)
       // ...
     } else {
       console.log('User is signed out')

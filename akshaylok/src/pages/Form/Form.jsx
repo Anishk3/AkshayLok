@@ -97,7 +97,6 @@ function Form() {
     e.preventDefault();
     setLoading(true)
 
-    // TODO: need to add inputs in deployContract
     console.log(`form input check ${name}, ${contact}, ${years}, ${dateOfStarting} `)
 
     const res = await contract.deployContractakl(
