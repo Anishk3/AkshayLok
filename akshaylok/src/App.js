@@ -15,7 +15,6 @@ import {auth} from './firebase/app.firebase.js'
 function App() {
 
   const {isConnected}  = useContext(AuthContext)
-  
 
   onAuthStateChanged(auth, (user) => {
     if (user) {
