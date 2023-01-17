@@ -4,6 +4,8 @@ import Home from "./Home/Home";
 import StartingPage from "./StartingPage/StartingPage";
 import About from "./About/About";
 import Form from "./Form/Form";
+import Faq from "./Faq/Faq"
+import Trans from './Trans/Trans'
 
 export {
     Login,
@@ -11,5 +13,7 @@ export {
     Home,
     StartingPage,
     About,
-    Form
+    Form,
+    Faq,
+    Trans
 }

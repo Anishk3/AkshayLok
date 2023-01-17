@@ -5,7 +5,7 @@ import { AuthContext } from "./context/authContext";
 
 
 import { Footer } from './components';
-import { Home, SignUp, Login, StartingPage, About, Form } from './pages';
+import { Home, SignUp, Login, StartingPage, About, Form, Faq, Trans } from './pages';
 import { onAuthStateChanged } from "firebase/auth";
 import { BrowserRouter as Routers, Route, Routes } from 'react-router-dom';
 
@@ -63,10 +63,19 @@ function App() {
             element = { isConnected ? <Form/> : <Login login={false} /> }> 
           </Route>
 
+          <Route 
+            path='/Faq' 
+            element = { isConnected ? <Faq/> : <Login login={false} /> }> 
+          </Route>
+
+          <Route 
+            path='/Trans' 
+            element = { isConnected ? <Trans/> : <Login login={false} /> }> 
+          </Route>
         </Routes>
       </Routers>
       
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 }
