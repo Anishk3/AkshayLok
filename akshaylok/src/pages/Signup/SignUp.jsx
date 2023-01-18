@@ -1,17 +1,22 @@
-import {GoogleSignin} from '../../firebase/googleProvider'
-import google from '../../assets/img/google.png'
+import { GoogleSignin } from "../../firebase/googleProvider";
+import google from "../../assets/img/google.png";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import {Navbar} from '../../components/index'
+import { Navbar } from "../../components/index";
+import akshayLok from "../../assets/img/AkshayLok.png";
 
 function SignUp() {
-
-
   return (
     <div>
-      <Navbar login={false}/>
       <div className="login">
+        <div className="img">
+          <img src={akshayLok} alt="logo" />
+          <h3>
+          <span className="h3Span" >Distributing Energy</span>
+          <span>Empowering People</span>
+        </h3>
+        </div>
         <main class="main">
           <div class="container">
             <section class="wrapper">
@@ -21,7 +26,7 @@ function SignUp() {
                   Existing User?
                   <span>
                     <Link to="/login" class="text text-links">
-                       Login Here!
+                      Login Here!
                     </Link>
                   </span>
                 </p>

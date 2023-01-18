@@ -144,7 +144,9 @@ router.get("/transaction", async(req, res)=>{
     })
 
   } catch (error) {
-    
+    res.status(500).json({
+      message:"error"
+    })
   }
 
 })
@@ -153,7 +155,7 @@ router.get("/transaction", async(req, res)=>{
 
 
 
-router.get("/user", async (req, res) => {
+router.post("/user", async (req, res) => {
   const email = req.body.email;
 
   try {
@@ -162,7 +164,7 @@ router.get("/user", async (req, res) => {
     });
 
     res.status(200).json({
-      ...user._doc,
+      ...user._doc
     });
   } catch (error) {
     res.status(500).json({
