@@ -1,12 +1,36 @@
 import { GoogleSignin } from "../../firebase/googleProvider";
 import google from "../../assets/img/google.png";
-
 import { Link } from "react-router-dom";
-
-import { Navbar } from "../../components/index";
 import akshayLok from "../../assets/img/AkshayLok.png";
 
+import { useState, useContext } from "react";
+import axios from "../../hooks/axios"
+import { AuthContext } from "../../context/authContext";
+
 function SignUp() {
+
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+
+  const { userLogin } = useContext(AuthContext);
+
+  async function handleSubmit(e){
+    e.preventDefault()
+
+    console.log(name, email, password)
+
+    const response = await axios.post("/register",{
+      email,
+      password,
+      userName : name,
+      google : null
+    })
+
+    userLogin(response.data);
+
+
+  }
   return (
     <div>
       <div className="login">
@@ -42,12 +66,15 @@ function SignUp() {
                     id="email"
                     class="input-field"
                     placeholder="Name"
+                    onChange={(e)=>{
+                      setName(e.target.value)
+                    }}
                   />
                 </div>
 
                 <div class="input-control">
                   <label for="tel" class="input-label" hidden>
-                    Email Address
+                    Contact
                   </label>
                   <input
                     type="tel"
@@ -68,6 +95,9 @@ function SignUp() {
                     id="email"
                     class="input-field"
                     placeholder="Email Address"
+                    onChange={(e)=>{
+                      setEmail(e.target.value)
+                    }}
                   />
                 </div>
                 <div class="input-control">
@@ -80,6 +110,9 @@ function SignUp() {
                     id="password"
                     class="input-field"
                     placeholder="Password"
+                    onChange={(e)=>{
+                      setPassword(e.target.value)
+                    }}
                   />
                 </div>
                 <div class="input-control">
@@ -91,7 +124,9 @@ function SignUp() {
                     name="submit"
                     class="input-submit"
                     value="Sign In"
-                    disabled
+                    onClick={(e)=>{
+                      handleSubmit(e)
+                    }}
                   />
                 </div>
               </form>
