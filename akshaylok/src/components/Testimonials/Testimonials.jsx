@@ -1,8 +1,10 @@
 import './testimonials.css'
+import ipfs from "../../assets/img/ipfs.png"
 
 function Testimonials() {
   return (
     <div className='testimonials' >
+      <div className="used">TECHNOLOGY USED</div>
   <div class="facebook">
   <div class="container">
     <div class="row1">
@@ -12,9 +14,9 @@ function Testimonials() {
         </a>
       </div>
       
-  <div class="twitter">
+  <div class="ipfs">
         <a href="#" class="partner__link">
-        <img class="partner_img" src="https://image.ibb.co/nfpXRw/twitterlogo.png"></img>
+        <img class="partner_img" src={ipfs}></img>
         </a>
       </div>
       

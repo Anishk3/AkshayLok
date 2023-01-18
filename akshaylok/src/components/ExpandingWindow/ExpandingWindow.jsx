@@ -19,7 +19,7 @@ function ExpandingWindow() {
     <div className="expanding-main" >
 
       <div className="expanding-header" >
-            Its not us , its you !
+            IT'S NOT US, IT'S YOU!
       </div>
       <div className="below">
         We set up your own energy station, go green while earning money !
