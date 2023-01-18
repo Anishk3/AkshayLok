@@ -19,7 +19,7 @@
     padding: 80px 60px;
     box-shadow: 0px 0px 30px 1px rgba(158, 158, 158, 0.75);
     border-radius: 15px;
-    width: 720px;
+    width: 900px;
 }
 
 .registrationForm .main h1{
@@ -39,6 +39,24 @@
     margin: 15px 0;
 }
 
+.registrationForm .main .terms{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 70px;
+}
+
+.registrationForm .main .terms input {
+    align-self: flex-start;
+    border-radius: 5px;
+    border: 1px solid grey;
+    width: 60%;
+    color: black;
+}
+
+.registrationForm .main .terms label{
+    font-size: 14px;
+}
+
 .registrationForm .main div label{
     font-size: 18px;
     font-weight: 500;
@@ -56,7 +74,7 @@
 
 .registrationForm .main div input{
     align-self: center;
-    width: 50%;
+    width: 60%;
     margin-right: 100px;
     border: 1px solid rgb(151, 191, 255);
     padding: 8px 10px ;
@@ -97,14 +115,14 @@
 }
 
 .registrationForm .third {
-    border-color: #3498db;
+    border-color: #1a73e8;
     color: #fff;
-    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    box-shadow: 0 0 40px 40px #1a73e8 inset, 0 0 0 0 #1a73e8;
     transition: all 350ms ease-in-out;
 }
 .registrationForm .third:hover {
-    box-shadow: 0 0 3px 0 #3498db inset, 
-                0 0 3px 1px #3498db;
+    box-shadow: 0 0 3px 0 #1a73e8 inset, 
+                0 0 3px 1px #1a73e8;
 
-    color: #3498db;
+    color: #1a73e8;
 }

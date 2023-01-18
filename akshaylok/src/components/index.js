@@ -5,7 +5,8 @@ import ExpandingWindow from "./ExpandingWindow/ExpandingWindow";
 import Infinity from "./Infinity/Infinity";
 import Cards from "./Cards/Cards";
 import Footer from "./Footer/Footer";
-import Contact from "./Contact/Contact";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+import Contact from "./Contact/Contact";
+import NotificationSlider from "./notificationSlider/NotificationSlider";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 
 export {
     Navbar,
@@ -16,4 +17,5 @@ export {
     Cards,
     Contact,
     Footer,
+    NotificationSlider
 }
