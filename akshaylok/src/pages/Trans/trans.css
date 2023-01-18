@@ -1,12 +1,7 @@
 .Trans {
-    font-family: 'lato', sans-serif;
     height: 80vh;
 }
 
-.Trans .responsive-table{
-    margin-bottom: 53px;
-    margin-top: 43px;
-}
 .Trans .container {
     max-width: 90vw;
     margin-left: auto;
@@ -16,9 +11,8 @@
 }
 .Trans h2 {
     font-size: 26px;
-    margin: 20px 0;
+    padding-top: 80px;
     text-align: center;
-    margin-top: 50px;
 }
 .Trans h2 small {
     font-size: 0.5em;

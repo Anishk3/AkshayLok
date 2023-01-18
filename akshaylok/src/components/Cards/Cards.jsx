@@ -6,7 +6,7 @@ function Cards() {
   return (
 
     <div className="priceCard">
-      <div class="heads">Choose your POWER</div>
+      <div class="heads">CHOOSE YOUR POWER</div>
       <div class="heads1">All contracts are stored in Ethereum Blockchain, making it secure and nearly impossible to tamper with.</div>
       <div class="cards">
         <div class="card shadow">

@@ -4,6 +4,7 @@ import ipfs from "../../assets/img/ipfs.png"
 function Testimonials() {
   return (
     <div className='testimonials' >
+      <div className="used">TECHNOLOGY USED</div>
   <div class="facebook">
   <div class="container">
     <div class="row1">

@@ -54,7 +54,7 @@ function Navbar({ login }) {
                   <Link className="a" to="/form">New Connection</Link>
                 </li>
                 <li class="nav-item">
-                  <Link className="a" to="/faq">FAQ</Link>
+                  <Link className="b" to="/faq">FAQ</Link>
                 </li>
                 <li class="nav-item">
                   <Link className="a" to="/trans">Transactions</Link>

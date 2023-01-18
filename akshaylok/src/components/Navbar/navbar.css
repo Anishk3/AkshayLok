@@ -11,6 +11,7 @@
   background-color: rgba(181, 181, 181, 0.172);
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.377);
   position: fixed;
+  z-index: 9999;
   /* background: transparent; */
 }
 
@@ -58,7 +59,7 @@
   
 }
 
-.nav-item .a {
+.navbar .nav-item .a {
   color: rgb(116, 116, 116);
   font-size: 0.9rem;
   font-weight: 400;
@@ -66,10 +67,22 @@
   transition: color 0.3s ease-out;
 }
 
+.navbar .nav-item .b{
+  color: rgb(116, 116, 116);
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+  margin-left: 38px;
+}
+
 .nav-item .a:hover {
   color: #3498db;
 }
 
+.nav-item .b:hover {
+  color: #3498db;
+}
 /* SECTIONS */
 
 .headline {

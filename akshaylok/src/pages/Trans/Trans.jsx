@@ -28,10 +28,10 @@ function Trans() {
 
   return (
     <>
+    <div className="Trans">
     <Navbar login={true} />
-      <div className="Trans">
-        <div class="container">
           <h2>Transaction History</h2>
+        <div class="container">
           <ul class="responsive-table">
             <li class="table-header">
               <div class="col col-1">Transaction Id</div>

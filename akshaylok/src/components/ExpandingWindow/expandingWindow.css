@@ -7,7 +7,6 @@
     align-items: center;
     overflow: hidden;
     height: 60vh;
-    font-family: "Euclid Circular A", "Poppins";
     background-image: url("https://image.ibb.co/de6JzG/bitmap_1_1.png");
     background-size:cover;
     background-repeat:no-repeat;
@@ -27,7 +26,7 @@
 {
     color:grey;
     text-align: center;
-    font-size: 30px;
+    font-size: 22px;
     margin: 0px;
 }
 
