@@ -5,7 +5,7 @@ import { AuthContext } from "./context/authContext";
 
 
 import { Footer } from './components';
-import { Home, SignUp, Login, StartingPage, About, Form, Faq, Trans } from './pages';
+import { Home, SignUp, Login, StartingPage, About, Form, Faq, Trans,} from './pages';
 import { onAuthStateChanged } from "firebase/auth";
 import { BrowserRouter as Routers, Route, Routes } from 'react-router-dom';
 

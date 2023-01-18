@@ -15,5 +15,5 @@ export {
     About,
     Form,
     Faq,
-    Trans
+    Trans,
 }

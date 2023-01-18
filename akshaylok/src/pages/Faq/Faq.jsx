@@ -1,10 +1,12 @@
 import React from 'react'
 import "./faq.css";
+import { Navbar } from "../../components";
 
 
 function Faq() {
   return (
     <div className="ques">
+            <Navbar login={true} />
         <section class="container">
             <div class="accordion">
                 <h2 class="title">Frequently Asked Questions</h2>
