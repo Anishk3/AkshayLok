@@ -3,8 +3,7 @@ import "./trans.css";
 import axios from "../../hooks/axios";
 
 import { AuthContext } from "../../context/authContext";
-import { Navbar } from '../../components'
-
+import { Navbar } from "../../components";
 
 function Trans() {
   const { data } = useContext(AuthContext);
@@ -28,45 +27,52 @@ function Trans() {
   }, []);
 
   return (
-    <div className="Trans">
-      <Navbar login={true} />
-      <div class="container">
-        <h2>Transaction History</h2>
-        <ul class="responsive-table">
-          <li class="table-header">
-            <div class="col col-1">Transaction Id</div>
-            <div class="col col-2">Contract Address</div>
-            <div class="col col-3">Date Of Agreement</div>
-            <div class="col col-4">Tenure</div>
-            <div class="col col-4"></div>
-          </li>
+    <>
+    <Navbar login={true} />
+      <div className="Trans">
+        <div class="container">
+          <h2>Transaction History</h2>
+          <ul class="responsive-table">
+            <li class="table-header">
+              <div class="col col-1">Transaction Id</div>
+              <div class="col col-2">Contract Address</div>
+              <div class="col col-3">Date Of Agreement</div>
+              <div class="col col-4">Tenure</div>
+              <div class="col col-4"></div>
+            </li>
 
-          {transactions &&
-            transactions.transactions.map((transaction) => {
-              return (
-                <li class="table-row">
-                  <div class="col col-1" data-label="Job Id">
-                    {transaction.transactionHash}
-                  </div>
-                  <div class="col col-2" data-label="Customer Name">
-                    {transaction.contractAddr}
-                  </div>
-                  <div class="col col-3" data-label="Amount">
-                    {transaction.details.dateOfStarting}
-                  </div>
-                  <div class="col col-4" data-label="Payment Status">
-                    {transaction.details.years}
-                  </div>
+            {transactions &&
+              transactions.transactions.map((transaction) => {
+                return (
+                  <li class="table-row">
+                    <div class="col col-1" data-label="Job Id">
+                      {transaction.transactionHash}
+                    </div>
+                    <div class="col col-2" data-label="Customer Name">
+                      {transaction.contractAddr}
+                    </div>
+                    <div class="col col-3" data-label="Amount">
+                      {transaction.details.dateOfStarting}
+                    </div>
+                    <div class="col col-4" data-label="Payment Status">
+                      {transaction.details.years}
+                    </div>
 
-                  <div class="col col-4" data-label="Payment Status">
-                    <a href={`https://goerli.etherscan.io/tx/${transaction.transactionHash}`} target="_blank" >View Details</a>
-                  </div>
-                </li>
-              );
-            })}
-        </ul>
+                    <div class="col col-4" data-label="Payment Status">
+                      <a
+                        href={`https://goerli.etherscan.io/tx/${transaction.transactionHash}`}
+                        target="_blank"
+                      >
+                        View Details
+                      </a>
+                    </div>
+                  </li>
+                );
+              })}
+          </ul>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -14,12 +14,13 @@ import { useState } from "react";
 import "./login.css";
 import { useContext } from "react";
 
+import akshayLok from "../../assets/img/AkshayLok.png";
+
 function Login() {
   const { userLogin } = useContext(AuthContext);
 
   const [email, setEmail] = useState(" ");
   const [password, setPassword] = useState(" ");
-
 
   async function handleSignIn(e) {
     e.preventDefault();
@@ -35,7 +36,14 @@ function Login() {
 
   return (
     <div className="login">
-      <Navbar login={false} />
+      {/* <Navbar login={false} /> */}
+      <div className="img">
+        <img src={akshayLok} alt="logo" />
+        <h3>
+          <span className="h3Span" >Distributing Energy</span>
+          <span>Empowering People</span>
+        </h3>
+      </div>
       <main class="main">
         <div class="container">
           <section class="wrapper">
@@ -104,9 +112,11 @@ function Login() {
             </div>
 
             <div className="button">
-              <button onClick={()=>{
-                GoogleSignin()
-              }}>
+              <button
+                onClick={() => {
+                  GoogleSignin();
+                }}
+              >
                 <img src={google} alt="" />
                 <span>Google</span>
               </button>
