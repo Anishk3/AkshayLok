@@ -3,6 +3,7 @@ import "./startingPage.css";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 
+
 function StartingPage() {
   const card = useRef();
 

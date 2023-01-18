@@ -3,8 +3,7 @@ import "./navbar.css";
 import { Link } from "react-router-dom";
 
 function Navbar({ login }) {
-  console.log(login);
-
+  
   if (!login) {
     return (
       <>
@@ -23,7 +22,7 @@ function Navbar({ login }) {
               </div>
               <ul class="nav no-search">
                 <li class="nav-item">
-                  <a href="#">Home</a>
+                  <Link to='/'>Home</Link>
                 </li>
               </ul>
             </nav>
@@ -49,22 +48,20 @@ function Navbar({ login }) {
               </div>
               <ul class="nav no-search">
                 <li class="nav-item">
-                  <a href="#">Home</a>
+                  <Link className="a" to="/">Home</Link>
                 </li>
                 <li class="nav-item">
-                  <a href="#">About</a>
+                  <Link className="a" to="/about">About</Link>
                 </li>
                 <li class="nav-item">
-                  <a href="#">Work</a>
+                  <Link className="a" to="/form">New Connection</Link>
                 </li>
                 <li class="nav-item">
-                  <a href="#">Careers</a>
+                  <Link className="a" to="/faq">FAQ</Link>
                 </li>
                 <li class="nav-item">
-                  <a href="#">Contact Us</a>
+                  <Link className="a" to="/trans">Transactions</Link>
                 </li>
-                <i class="fas fa-search" id="search-icon"></i>
-                <input class="search-input" type="text" placeholder="Search.." />
               </ul>
             </nav>
           </div>

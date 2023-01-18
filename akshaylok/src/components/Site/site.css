@@ -1,0 +1,65 @@
+.site{
+    font-family: 'Roboto', sans-serif;
+    background-image: url("https://image.ibb.co/de6JzG/bitmap_1_1.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    /* background: transparent; */
+}
+
+.site .site__title{
+    padding-top: 90px;;
+    text-align: center;
+    font-size: 30px;
+    margin: 0px;
+}
+
+.site .site__subtitle{
+    font-size: 22px;
+    color: #8198ae;
+    margin: 15px 0 40px 0;
+    text-align: center;
+}
+
+.site .site__img{
+    margin-top: 50px;
+    display: inline-block;
+    width: 77%;
+    margin-left: 180px;
+}
+
+.site .btn{
+    margin: 15px;
+    display: inline-flex;
+    background-color:#3a9fff;
+    border-radius: 20px;
+    padding: 10px 25px;
+    color: #fff;
+    box-shadow: 0px 18px 13px -6px rgba(0, 0, 0,0.2);
+    transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+
+.site .btn:hover{
+    box-shadow: 0px 25px 18px -6px rgba(0, 0, 0,0.2);
+    background-color: #63b2fc;
+    color: #fff;
+    }
+
+.site .site__box-link{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+/* .site .btn--revert{
+    margin: 13px;
+} */
+
+/* .site .btn--width{
+    width: 120px;
+    } */

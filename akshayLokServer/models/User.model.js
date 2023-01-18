@@ -18,7 +18,8 @@ const UserSchema = new mongoose.Schema(
         },
         
         transactions:{
-            type: [String]
+            type: Array,
+            default: []
         }
     },  
     {

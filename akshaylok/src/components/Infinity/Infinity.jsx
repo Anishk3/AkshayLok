@@ -26,8 +26,8 @@ const TAGS = [
   "webdev",
 ];
 const DURATION = 20000;
-const ROWS = 5;
-const TAGS_PER_ROW = 15;
+const ROWS = 3;
+const TAGS_PER_ROW = 15 ;
 
 const random = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 const shuffle = (arr) => [...arr].sort(() => 0.5 - Math.random());
