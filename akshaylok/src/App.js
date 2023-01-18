@@ -42,7 +42,7 @@ function App() {
 
           <Route 
             path='/signup' 
-            element = {<SignUp login={false} />}>
+            element = {isConnected ? <Home/> : <SignUp login={false} />}>
           </Route>
 
           <Route 
