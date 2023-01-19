@@ -3,9 +3,11 @@ import { ethers } from "ethers";
 import { AuthContext } from "../../context/authContext";
 import { Footer } from '../../components';
 
-import { Navbar } from "../../components";
-
+import { Navbar, NotificationSlider } from "../../components";
 import axios from "../../hooks/axios";
+
+import { Link } from "react-router-dom";
+
 
 import "./form.css";
 
@@ -37,6 +39,9 @@ function Form() {
   const [loading, setLoading] = useState(false)
 
 
+  //notiff
+  const [notif, setNotif] = useState(false)
+
   let contract_ABI = [
     "function deployContractakl(int _years, string memory _name, address _userAddress, string memory _dateOfAgreement) public",
     "function getAddr() public view returns(address)",
@@ -57,6 +62,7 @@ function Form() {
           setPublicAddress(result[0]);
           console.log(result[0]);
           setConnButtonText("Wallet Connected");
+
         });
     } else {
       setErrorMessage("Metamask Not Present");
@@ -90,6 +96,7 @@ function Form() {
       signer: tempSigner,
     });
 
+    setNotif(true)
     setButtonFunc("deploy")
 
   }
@@ -139,6 +146,7 @@ function Form() {
   return (
     <div className="registrationForm">
       <Navbar login={true} />
+      <NotificationSlider data={notif} />
       <div className="main">
         <h1>New Connection</h1>
         <form>
@@ -190,6 +198,20 @@ function Form() {
               />
           </div>
 
+              { buttonFunc != "metamask" && (
+                <div className="terms" >
+                <label for="date">Type  <strong>"CONFIRM"</strong> To Accept <Link to='/terms'>Terms and Conditions</Link> </label>
+                <input 
+                  type="text" 
+                  id="confirm" 
+                  placeholder="CONFIRM"
+                  />
+              </div>
+              ) }
+
+
+            
+            
           <button
             type="submit"
             className="btn third"

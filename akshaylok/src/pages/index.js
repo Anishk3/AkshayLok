@@ -6,6 +6,7 @@ import About from "./About/About";
 import Form from "./Form/Form";
 import Faq from "./Faq/Faq"
 import Trans from './Trans/Trans'
+import Terms from "./Terms/Terms";
 import Loading from "./Loading/Loading";
 import Bolt from "./Bolt/Bolt";
 
@@ -20,5 +21,6 @@ export {
     Faq,
     Trans,
     Loading,
-    Bolt
+    Bolt,
+    Terms
 }
