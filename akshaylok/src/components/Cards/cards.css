@@ -1,5 +1,5 @@
 .priceCard{
-  margin-top: 50px;
+  margin-top: 150px;
   background: transparent;
 }
 
@@ -7,7 +7,12 @@
   text-align: center;
   font-size: 30px;
   margin: 0px;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
+  text-align: center;
+    font-size: 30px;
+    margin: 0px;
+    font-weight: 600;
+
 }
 
 .priceCard .heads1{
@@ -15,7 +20,11 @@
   text-align: center;
   font-size: 22px;
   margin: 0px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
+  font-size: 22px;
+    color: #8198ae;
+    
+    text-align: center;
 }
 
 .priceCard .cards {
@@ -127,7 +136,8 @@
   border-bottom: 2px solid hsla(240, 8%, 85%, 0.253);
 }
 .priceCard  .pack {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 @media (max-width: 280px) {

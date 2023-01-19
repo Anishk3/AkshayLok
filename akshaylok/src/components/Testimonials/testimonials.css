@@ -1,12 +1,14 @@
 .testimonials{
     background: transparent;
+    margin-top: 150px;
 }
 
 .testimonials .used{
     text-align: center;
-    font-size: 30px;
-    margin-top: 30px;
+    margin-top: 0px;
     padding-bottom: 25px;
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .testimonials .ipfs{
@@ -14,7 +16,6 @@
 }
 .testimonials .row1{
         display: inline-flex;
-        padding-top: 90px;
         margin-left: 275px;
 }
 
