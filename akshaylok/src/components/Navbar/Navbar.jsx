@@ -45,7 +45,7 @@ function Navbar({ login }) {
               </div>
               <ul class="nav no-search">
                 <li class="nav-item">
-                  <Link className="a" to="/">Home</Link>
+                  <Link className="a" to="/home">Home</Link>
                 </li>
                 <li class="nav-item">
                   <Link className="a" to="/about">About</Link>

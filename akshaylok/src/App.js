@@ -30,19 +30,25 @@ function App() {
 
       <Routers>
         <Routes>
+
           <Route 
-            path='/'
+            path='/' 
+            element = { isConnected ? <Loading/> : <Login login={false} /> }> 
+          </Route>
+
+          <Route 
+            path='/home'
             element = { isConnected ? <Home/> : <Login login={false} />}> 
           </Route>
 
           <Route 
             path='/login' 
-            element = { isConnected ? <Home/> : <Login login={false} />}> 
+            element = { isConnected ? <Loading/> : <Login login={false} />}> 
           </Route>
 
           <Route 
             path='/signup' 
-            element = {isConnected ? <Home/> : <SignUp login={false} />}>
+            element = {isConnected ? <Loading/> : <SignUp login={false} />}>
           </Route>
 
           <Route 
@@ -69,11 +75,7 @@ function App() {
             path='/Trans' 
             element = { isConnected ? <Trans/> : <Login login={false} /> }> 
           </Route>
-          <Route 
-            path='/Loading' 
-            element = { isConnected ? <Loading/> : <Login login={false} /> }> 
-          </Route>
-
+          
           <Route 
             path='/Bolt' 
             element = { isConnected ? <Bolt /> : <Login login={false} /> }> 
