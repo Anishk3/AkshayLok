@@ -3,6 +3,7 @@
     background-size:cover;
     background-repeat:no-repeat;
     background-position: center;
+    
     /* background: transparent; */
 }
 
@@ -11,6 +12,8 @@
     text-align: center;
     font-size: 30px;
     margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
 }
 
 .site .site__subtitle{
@@ -21,7 +24,7 @@
 }
 
 .site .site__img{
-    margin-top: 50px;
+    margin-top: 10px;
     display: inline-block;
     width: 77%;
     margin-left: 180px;

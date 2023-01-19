@@ -5,9 +5,10 @@
 
 .con h1 {
     font-weight: 600;
-    font-size: 72px;
-    color: black;
     text-align: center;
+    font-size: 30px;
+    margin: 0px;
+    font-weight: 600;
 }
 
 .con h4 {
@@ -16,6 +17,10 @@
     color: #9b9b9b;
     text-align: center;
     line-height: 1.5;
+    font-size: 22px;
+    color: #8198ae;
+    margin: 15px 0 40px 0;
+    text-align: center;
 }
 
 /* ///// inputs /////*/
