@@ -1,13 +1,14 @@
 import { useState, useContext } from "react";
 import { ethers } from "ethers";
 import { AuthContext } from "../../context/authContext";
-import { Footer } from '../../components';
+import { Footer } from "../../components";
 
 import { Navbar, NotificationSlider } from "../../components";
 import axios from "../../hooks/axios";
 
 import { Link } from "react-router-dom";
 
+import { Bolt } from "../index";
 
 import "./form.css";
 
@@ -27,20 +28,18 @@ function Form() {
   const [signer, setSigner] = useState(null);
   const [contract, setContract] = useState(null);
 
-
   //form inouts
-  const [name, Setname] = useState(null)
-  const [contact, setContact] = useState(null)
-  const [years, setYears] = useState(null)
-  const [dateOfStarting, setDate] = useState(null)
+  const [name, Setname] = useState(null);
+  const [contact, setContact] = useState(null);
+  const [years, setYears] = useState(null);
+  const [dateOfStarting, setDate] = useState(null);
 
   //button variale
-  const [buttonFunc, setButtonFunc] = useState("metamask")
-  const [loading, setLoading] = useState(false)
-
+  const [buttonFunc, setButtonFunc] = useState("metamask");
+  const [loading, setLoading] = useState(false);
 
   //notiff
-  const [notif, setNotif] = useState(false)
+  const [notif, setNotif] = useState(false);
 
   let contract_ABI = [
     "function deployContractakl(int _years, string memory _name, address _userAddress, string memory _dateOfAgreement) public",
@@ -62,7 +61,6 @@ function Form() {
           setPublicAddress(result[0]);
           console.log(result[0]);
           setConnButtonText("Wallet Connected");
-
         });
     } else {
       setErrorMessage("Metamask Not Present");
@@ -96,16 +94,17 @@ function Form() {
       signer: tempSigner,
     });
 
-    setNotif(true)
-    setButtonFunc("deploy")
-
+    setNotif(true);
+    setButtonFunc("deploy");
   }
 
   async function deployContract(e) {
     e.preventDefault();
-    setLoading(true)
+    setLoading(true);
 
-    console.log(`form input check ${name}, ${contact}, ${years}, ${dateOfStarting} `)
+    console.log(
+      `form input check ${name}, ${contact}, ${years}, ${dateOfStarting} `
+    );
 
     const res = await contract.deployContractakl(
       years,
@@ -126,21 +125,19 @@ function Form() {
         years,
         name,
         publicAddress,
-        dateOfStarting
+        dateOfStarting,
       },
     };
-
 
     const sendData = {
       email: data.email,
       transaction: TransactionData,
     };
 
-
     const respond = await axios.put("/transaction", sendData);
     console.log(respond.data);
 
-    setLoading(false)
+    setLoading(false);
   }
 
   return (
@@ -150,85 +147,88 @@ function Form() {
       <div className="main">
         <h1>New Connection</h1>
         <form>
-          <div className="first-input" >
-            <label for="name">Name <br /> <span>As per Government ID</span></label>
-            <input 
-              type="text" 
-              id="name" 
+          <div className="first-input">
+            <label for="name">
+              Name <br /> <span>As per Government ID</span>
+            </label>
+            <input
+              type="text"
+              id="name"
               placeholder="john Doe"
-              onChange={(e)=>{
-                Setname(e.target.value)
+              onChange={(e) => {
+                Setname(e.target.value);
               }}
-              />
+            />
           </div>
 
           <div>
             <label for="contact"> Contact Nuber </label>
-            <input 
-              type="tel" 
-              id="contact" 
+            <input
+              type="tel"
+              id="contact"
               placeholder="6574832938"
-              onChange={(e)=>{
-                setContact(e.target.value)
+              onChange={(e) => {
+                setContact(e.target.value);
               }}
-              />
+            />
           </div>
 
           <div>
             <label for="years">Years</label>
-            <input 
-              type="number" 
-              id="years" 
+            <input
+              type="number"
+              id="years"
               placeholder="Years"
-              onChange={(e)=>{
-                setYears(e.target.value)
+              onChange={(e) => {
+                setYears(e.target.value);
               }}
-              />
+            />
           </div>
 
           <div>
             <label for="date">Date of Starting</label>
-            <input 
-              type="date" 
-              id="date" 
+            <input
+              type="date"
+              id="date"
               placeholder="12-10-2002"
-              onChange={(e)=>{
-                setDate(e.target.value)
+              onChange={(e) => {
+                setDate(e.target.value);
               }}
-              />
+            />
           </div>
 
-              { buttonFunc != "metamask" && (
-                <div className="terms" >
-                <label for="date">Type  <strong>"CONFIRM"</strong> To Accept <Link to='/terms'>Terms and Conditions</Link> </label>
-                <input 
-                  type="text" 
-                  id="confirm" 
-                  placeholder="CONFIRM"
-                  />
-              </div>
-              ) }
+          {buttonFunc != "metamask" && (
+            <div className="terms">
+              <label for="date">
+                Type <strong>"CONFIRM"</strong> To Accept{" "}
+                <Link to="/terms">Terms and Conditions</Link>{" "}
+              </label>
+              <input type="text" id="confirm" placeholder="CONFIRM" />
+            </div>
+          )}
 
-
-            
-            
           <button
             type="submit"
             className="btn third"
-            disabled = {loading ? true : false}
+            disabled={loading ? true : false}
             onClick={(e) => {
-              if(buttonFunc == "metamask"){
+              if (buttonFunc == "metamask") {
                 connectWalletHandler(e);
-              }else{
-                deployContract(e)
+              } else {
+                deployContract(e);
               }
             }}
           >
-            {buttonFunc == "metamask" ? "connect to metamask" : "Sign the Agreement"}
+            {buttonFunc == "metamask"
+              ? "connect to metamask"
+              : "Sign the Agreement"}
           </button>
-          
         </form>
       </div>
+      { loading && <div className="bolt">
+            <Bolt/>
+        </div>}
+
       {/* <Footer/> */}
     </div>
   );
