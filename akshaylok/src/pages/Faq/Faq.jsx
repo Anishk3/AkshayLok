@@ -1,5 +1,6 @@
 import React from 'react'
 import "./faq.css";
+import { Footer } from '../../components';
 
 import { Navbar } from '../../components';
 
@@ -67,6 +68,7 @@ function Faq() {
                 </article>
             </div>
         </section>
+        <Footer/>
     </div>
 )
 }

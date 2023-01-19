@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import { ethers } from "ethers";
 import { AuthContext } from "../../context/authContext";
+import { Footer } from '../../components';
 
 import { Navbar } from "../../components";
 
@@ -206,6 +207,7 @@ function Form() {
           
         </form>
       </div>
+      {/* <Footer/> */}
     </div>
   );
 }
