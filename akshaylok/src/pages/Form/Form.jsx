@@ -1,6 +1,7 @@
 import { useState, useContext } from "react";
 import { ethers } from "ethers";
 import { AuthContext } from "../../context/authContext";
+import { Footer } from '../../components';
 
 import { Navbar, NotificationSlider } from "../../components";
 import axios from "../../hooks/axios";
@@ -228,6 +229,7 @@ function Form() {
           
         </form>
       </div>
+      {/* <Footer/> */}
     </div>
   );
 }

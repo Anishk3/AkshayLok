@@ -2,6 +2,7 @@ import "./startingPage.css";
 
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+import { Footer } from '../../components';
 
 
 function StartingPage() {
@@ -57,6 +58,7 @@ function StartingPage() {
           <button>Get Started</button>
         </Link>
       </div>
+      <Footer/>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { useEffect, useContext, useState } from "react";
 import "./trans.css";
 import axios from "../../hooks/axios";
+import { Footer } from '../../components';
 
 import { AuthContext } from "../../context/authContext";
 import { Navbar } from "../../components";
@@ -71,6 +72,7 @@ function Trans() {
               })}
           </ul>
         </div>
+        <Footer/>
       </div>
     </>
   );

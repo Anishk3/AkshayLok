@@ -13,6 +13,7 @@ function Home() {
         <Cards/>
         <Testimonials/>
         <Contact/>
+        <Footer/>
     </div>
   )
 }
