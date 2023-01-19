@@ -1,5 +1,4 @@
 .expanding {
-    margin-top: 90px;
     margin-bottom: 90px;
     display: flex;
     flex-direction: row;
@@ -7,7 +6,6 @@
     align-items: center;
     overflow: hidden;
     height: 60vh;
-    font-family: "Euclid Circular A", "Poppins";
     background-image: url("https://image.ibb.co/de6JzG/bitmap_1_1.png");
     background-size:cover;
     background-repeat:no-repeat;
@@ -16,20 +14,23 @@
 }
 
 .expanding-header{
-    padding-top: 90px;
+    padding-top: 150px;
     text-align: center;
     font-size: 30px;
     margin: 0px;
+    font-weight: 600;
 
 }
 
 .below
 {
-    color:grey;
+    font-size: 22px;
+    color: #8198ae;
+    margin: 15px 0 40px 0;
     text-align: center;
-    font-size: 30px;
-    margin: 0px;
 }
+
+
 
 .expanding .credit {
     position: absolute;

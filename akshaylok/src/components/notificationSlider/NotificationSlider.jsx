@@ -1,14 +1,13 @@
 import React from "react";
-import './notificationSlider.css'
+import "./notificationSlider.css";
 
-
-function NotificationSlider() {
+function NotificationSlider({data}) {
   return (
     <div id="notification">
-      <p>
-        <strong>Success!</strong>
-      </p>
-      <p>All files exported successfully.</p>
+      <div 
+        id="notif"
+        className={data ? "visible" : "" }
+        >Connected to Metamask</div>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import './about.css'
 import { Navbar } from '../../components'
+import { Footer } from '../../components';
 
 function About() {
   return (
@@ -19,7 +20,7 @@ function About() {
 
 
       {/* <img src="https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></img> */}
-
+    <Footer/>
     </div>
   )
 }

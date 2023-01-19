@@ -1,0 +1,81 @@
+
+    .load {
+    width: 100%;
+    height: 100vh;
+  }
+  video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background: #fff;
+  }
+  
+  .load .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 570px;
+  }
+  
+  .overlay {
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+  }
+  .load {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10%; */
+  }
+  
+  .progressbar{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+  }
+  
+  .progressPercent{
+    font-weight: 600;
+    font-family:'Franklin Gothic Medium';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #eee;
+    text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555;
+  }
+  
+  .load .btn{
+    display: block;
+    margin: 2rem auto;
+    border: none;
+    border-radius: 3px;     
+    outline: none;
+    width: 100px;
+    height: 40px;
+    background-color: #1a73e8;
+    transition: box-shadow 0.5s;
+    font-size: 16px;
+    font-family:arial;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .btn:hover{
+    -webkit-box-shadow: inset 100px 0 0 0 #1a73e8;
+      box-shadow: inset 100px 0 0 0 #1a73e8;
+  }

@@ -4,8 +4,8 @@ import { useContext } from 'react';
 import { AuthContext } from "./context/authContext";
 
 
-import { Footer } from './components';
-import { Home, SignUp, Login, StartingPage, About, Form, Faq, Trans } from './pages';
+
+import { Home, SignUp, Login, StartingPage, About, Form, Faq, Trans,Loading,Bolt,Terms } from './pages';
 import { onAuthStateChanged } from "firebase/auth";
 import { BrowserRouter as Routers, Route, Routes } from 'react-router-dom';
 
@@ -30,19 +30,25 @@ function App() {
 
       <Routers>
         <Routes>
+
           <Route 
-            path='/'
+            path='/' 
+            element = { isConnected ? <Loading/> : <Login login={false} /> }> 
+          </Route>
+
+          <Route 
+            path='/home'
             element = { isConnected ? <Home/> : <Login login={false} />}> 
           </Route>
 
           <Route 
             path='/login' 
-            element = { isConnected ? <Home/> : <Login login={false} />}> 
+            element = { isConnected ? <Loading/> : <Login login={false} />}> 
           </Route>
 
           <Route 
             path='/signup' 
-            element = {<SignUp login={false} />}>
+            element = {isConnected ? <Loading/> : <SignUp login={false} />}>
           </Route>
 
           <Route 
@@ -69,10 +75,19 @@ function App() {
             path='/Trans' 
             element = { isConnected ? <Trans/> : <Login login={false} /> }> 
           </Route>
+          
+          <Route 
+            path='/Bolt' 
+            element = { isConnected ? <Bolt /> : <Login login={false} /> }> 
+          </Route>
+
+          <Route 
+            path='/terms' 
+            element = { isConnected ? <Terms/> : <Login login={false} /> }> 
+          </Route>
         </Routes>
       </Routers>
       
-      <Footer/>
     </div>
   );
 }

@@ -6,14 +6,14 @@ function Cards() {
   return (
 
     <div className="priceCard">
-      <div class="heads">Choose your POWER</div>
+      <div class="heads">Choose Your Power</div>
       <div class="heads1">All contracts are stored in Ethereum Blockchain, making it secure and nearly impossible to tamper with.</div>
       <div class="cards">
         <div class="card shadow">
           <ul>
             <li class="pack">Lightening</li>
             <li id="basic" class="price bottom-bar">
-              199.99
+              199
             </li>
             <li class="bottom-bar">Contract Deployment</li>
             <li class="bottom-bar">10% off on installation</li>
@@ -27,7 +27,7 @@ function Cards() {
           <ul>
             <li class="pack">Bolt</li>
             <li id="professional" class="price bottom-bar">
-              249.99
+              249
             </li>
             <li class="bottom-bar">Contract Deployment</li>
             <li class="bottom-bar">50 % off on insatallation</li>
@@ -41,7 +41,7 @@ function Cards() {
           <ul>
             <li class="pack">Storm</li>
             <li id="master" class="price bottom-bar">
-              399.99
+              399
             </li>
             <li class="bottom-bar">Contract Deployment</li>
             <li class="bottom-bar">0 Installation Charges</li>
