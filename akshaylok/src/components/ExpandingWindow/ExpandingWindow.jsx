@@ -116,7 +116,7 @@ function ExpandingWindow() {
               </div>
               <div class="info">
                 <div class="main">Security</div>
-                <div class="sub">Omuke trughte a otufta</div>
+                <div class="sub">we are impenetrable</div>
               </div>
             </div>
           </div>

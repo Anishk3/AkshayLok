@@ -46,9 +46,9 @@
     overflow-y: hidden;
 }
 
-/* ::-webkit-scrollbar{
-    width: 10em;
-} */
+.Trans .responsive-table ::-webkit-scrollbar{
+    width: 0.5px;
+}
 
 .Trans .responsive-table .topic1 {
     flex-basis: 40%;
