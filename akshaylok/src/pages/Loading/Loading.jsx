@@ -11,7 +11,7 @@ function Loading() {
   useEffect(() => {
     setTimeout(() => {
       navigate("/home");
-    }, 2000);
+    }, 2500);
   }, []);
 
   useEffect(() => {
