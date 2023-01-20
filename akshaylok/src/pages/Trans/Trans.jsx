@@ -1,7 +1,7 @@
 import { useEffect, useContext, useState } from "react";
 import "./trans.css";
 import axios from "../../hooks/axios";
-import { Footer } from '../../components';
+// import { Footer } from '../../components';
 
 import { AuthContext } from "../../context/authContext";
 import { Navbar } from "../../components";
@@ -35,8 +35,8 @@ function Trans() {
         <div class="container">
           <ul class="responsive-table">
             <li class="table-header">
-              <div class="col col-1">Transaction Id</div>
-              <div class="col col-2">Contract Address</div>
+              <div class="topic1">Transaction Id</div>
+              <div class="topic2">Contract Address</div>
               <div class="col col-3">Date Of Agreement</div>
               <div class="col col-4">Tenure</div>
               <div class="col col-4"></div>
@@ -72,7 +72,7 @@ function Trans() {
               })}
           </ul>
         </div>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     </>
   );

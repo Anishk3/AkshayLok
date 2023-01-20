@@ -5,14 +5,15 @@ import { Footer } from "../../components";
 
 import { Navbar, NotificationSlider } from "../../components";
 import axios from "../../hooks/axios";
-
-import { Link } from "react-router-dom";
-
+import { Link, useNavigate  } from "react-router-dom";
 import { Bolt } from "../index";
 
 import "./form.css";
 
 function Form() {
+  
+  const navigate = useNavigate();
+
   const { userMetamask, data } = useContext(AuthContext);
 
   const [errorMessage, setErrorMessage] = useState(null);
@@ -138,6 +139,7 @@ function Form() {
     console.log(respond.data);
 
     setLoading(false);
+    navigate('/Success')
   }
 
   return (
