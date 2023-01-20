@@ -9,6 +9,7 @@ import Trans from './Trans/Trans'
 import Terms from "./Terms/Terms";
 import Loading from "./Loading/Loading";
 import Bolt from "./Bolt/Bolt";
+import Success from "./Success/Success";
 
 
 export {
@@ -22,5 +23,6 @@ export {
     Trans,
     Loading,
     Bolt,
-    Terms
+    Terms,
+    Success
 }

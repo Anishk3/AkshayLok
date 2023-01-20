@@ -5,7 +5,7 @@ import { AuthContext } from "./context/authContext";
 
 
 
-import { Home, SignUp, Login, StartingPage, About, Form, Faq, Trans,Loading,Bolt,Terms } from './pages';
+import { Home, SignUp, Login, StartingPage, About, Form, Faq, Trans, Loading, Bolt, Terms, Success } from './pages';
 import { onAuthStateChanged } from "firebase/auth";
 import { BrowserRouter as Routers, Route, Routes } from 'react-router-dom';
 
@@ -85,6 +85,15 @@ function App() {
             path='/terms' 
             element = { isConnected ? <Terms/> : <Login login={false} /> }> 
           </Route>
+
+          <Route 
+            path='/Success' 
+            element = { isConnected ? <Success/> : <Login login={false} /> }> 
+          </Route>
+
+
+
+
         </Routes>
       </Routers>
       

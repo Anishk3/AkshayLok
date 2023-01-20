@@ -2,15 +2,15 @@
     .bolt {
         width: 100%;
         height: 100vh;
-      }
-      .bolt video {
+    }
+    .bolt video {
         width: 100%;
         height: 100vh;
         object-fit: cover;
         background: #fff;
-      }
-      
-      .bolt .content {
+    }
+    
+    .bolt .content {
         position: absolute;
         width: 100%;
         height: 100%;

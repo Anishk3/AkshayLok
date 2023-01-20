@@ -43,8 +43,25 @@
 .Trans .responsive-table .col-1 {
     flex-basis: 40%;
     overflow-x: scroll;
+    overflow-y: hidden;
 }
+
+.Trans .responsive-table ::-webkit-scrollbar{
+    width: 0.5px;
+}
+
+.Trans .responsive-table .topic1 {
+    flex-basis: 40%;
+    overflow-x: hidden;
+}
+
+.Trans .responsive-table .topic2 {
+    flex-basis: 40%;
+    overflow-x: hidden;
+}
+
 .Trans .responsive-table .col-2 {
+    overflow-y: hidden;
     flex-basis: 40%;
     overflow-x: scroll;
     margin: 0 30px;
