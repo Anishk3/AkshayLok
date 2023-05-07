@@ -1,62 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
-.about{
-    overflow-x: hidden;
-}
-
-.about .about-text {
-    width: 100vw;
-    height: 100vh;
-    background-image: url("https://images.unsplash.com/photo-1615209853186-e4bd66602508?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0;
-    font-family: 'Poppins', sans-serif;;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.about-text .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.438);
-    border-radius: 20px;
-    padding: 60px 30px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-
-.about .about-text .text-area{
+.part1{
     position: relative;
-    padding: 20px 50px;
-    border-radius: 20px;
-    font-size: 64px;
-    color: rgb(68, 68, 68); 
-    top: -40px;
-    font-weight: 500;
+    height: 325px;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    width: 420px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+    backdrop-filter: blur(5px) !important;
+    border: 2px solid rgba(255, 255, 255, 0.1) !important;
+    
 }
 
-.about .about-body {
-    width: 80vw;
+.part1_1 {
+    position: relative;
+    height: 120px;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    padding-left: 10px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(50px);
+    border: 2px solid rgba(255, 255, 255, 0.1) !important;
+    padding-top: 10px;
+}
+
+.part1_2{
+    position: relative;
+    padding-left: 10px;
+    padding-top: 10px;
+    height: 120px;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+    backdrop-filter: blur(5px) !important;
+    border: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.part1_3{
+    position: relative;
+    height: 120px;
+    padding-top: 10px;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    padding-left: 10px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.4) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+    backdrop-filter: blur(5px) !important;
+    border: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.singleNft-btn {
+    padding: 8px 25px;
+    background: #5142fc;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    transition: 0.3s;
     display: flex;
-    flex-direction: column;
+    margin: 0px;
     align-items: center;
     justify-content: center;
+    left:60px;
+    color: white !important;
+  }
+
+  .singleNft-btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .singleNft-btn:hover {
+    background: #fff;
+    background: transparent;
+    border: 1px solid #5142fc ;
+  }
+  
+  .singleNft-btn:hover a {
+    color: #5142fc !important;
+  }
+
+  
+
+.single__nft__card1{
+  position: relative;
+  /* height: 120px; */
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  padding-left: 10px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(50px);
+  border: 2px solid rgba(255, 255, 255, 0.1) !important;
+  padding-top: 10px;
 }
 
-.about .about-body .Heading{
-    font-family: 'Poppins';
-    font-weight: 600;
-    font-size: 32px;
-    color: rgb(68, 68, 68); 
-    margin-bottom: 30px;
+
+.mygraph1{
+  position: relative;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  backdrop-filter: blur(5px) !important;
+  border: 2px solid rgba(255, 255, 255, 0.1) !important;
+  
+}
+.mygraph2{
+  position: relative;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+  backdrop-filter: blur(5px) !important;
+  border: 2px solid rgba(255, 255, 255, 0.1) !important;
+  
 }
 
-.about .about-body .desc{
-    font-size: 18px;
-    color: rgb(68, 68, 68); 
-    line-height: 1.45rem;
-}
