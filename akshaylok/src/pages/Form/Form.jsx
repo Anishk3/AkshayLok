@@ -47,7 +47,9 @@ function Form() {
     "function getAddr() public view returns(address)",
   ];
 
-  let contractAdd = "0x2Bdf8FE2F02c4802b2814c4bc844a7ea5547F1b3";
+  // let contractAdd = "0x2Bdf8FE2F02c4802b2814c4bc844a7ea5547F1b3";
+  let contractAdd = "0xfEd6c7FdcdcCF7fE174AAe452A062D28285d0785";
+
 
   function connectWalletHandler(e) {
     e.preventDefault();

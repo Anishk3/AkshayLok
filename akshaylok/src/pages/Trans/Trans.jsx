@@ -61,7 +61,7 @@ function Trans() {
 
                     <div class="col col-4" data-label="Payment Status">
                       <a
-                        href={`https://goerli.etherscan.io/tx/${transaction.transactionHash}`}
+                        href={`https://sepolia.etherscan.io/tx/${transaction.transactionHash}`}
                         target="_blank"
                       >
                         View Details
