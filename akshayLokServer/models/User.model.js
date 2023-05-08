@@ -16,6 +16,11 @@ const UserSchema = new mongoose.Schema(
             type: String,
             default: null
         },
+
+        role : {
+            type: String,
+            default : null
+        },
         
         transactions:{
             type: Array,
