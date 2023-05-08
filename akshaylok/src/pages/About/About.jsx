@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 // import LiveAuction from "../components/ui/Live-auction/LiveAuction";
 import LineChart from "../../Charts/LineChart";
 import BarChart from "../../Charts/BarChart";
+import { AuthContext } from "../../context/authContext";
+import axios from "../../hooks/axios";
 // import SellerSection from "../components/ui/Seller-section/SellerSection";
 import { useNavigate } from "react-router-dom";
 // import Trending from "../components/ui/Trending-section/Trending";
@@ -34,6 +36,25 @@ const About = () => {
   // const { userData } = useContext(AuthContext);
   // console.log(userData);
   // console.log("Diptanshu bkl");
+  const { data } = useContext(AuthContext);
+  const [transactions, setTransactions] = useState(null);
+  useEffect(() => {
+    const fetchTrans = async () => {
+      console.log(data.email);
+      const responseData = await axios.post("/user", {
+        email: data.email,
+      });
+
+      console.log(responseData.data);
+      for (let i in responseData.data) {
+        console.log(responseData.data[i]);
+      }
+      setTransactions(responseData.data);
+    };
+
+    fetchTrans();
+  }, []);
+  console.log("sabka baap",transactions)
   let username = "Subham";
   let useremail = "subhamgg162@gmail.com";
 

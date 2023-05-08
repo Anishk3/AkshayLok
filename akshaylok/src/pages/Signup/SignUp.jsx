@@ -4,32 +4,36 @@ import { Link } from "react-router-dom";
 import akshayLok from "../../assets/img/AkshayLok.png";
 
 import { useState, useContext } from "react";
-import axios from "../../hooks/axios"
+import axios from "../../hooks/axios";
 import { AuthContext } from "../../context/authContext";
 
 function SignUp() {
-
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+    const [selectedOption, setSelectedOption] = useState('Corporate');
+  
+    function handleSelectChange(event) {
+      setSelectedOption(event.target.value);
+      setSelectedOption(event.target.value);
+      // console.log("meow",event.target.value)
+    }
   const { userLogin } = useContext(AuthContext);
 
-  async function handleSubmit(e){
-    e.preventDefault()
+  async function handleSubmit(e) {
+    e.preventDefault();
 
-    console.log(name, email, password)
+    // console.log("diptanshu mkc",name, email, password,selectedOption);
 
-    const response = await axios.post("/register",{
+    const response = await axios.post("/register", {
       email,
       password,
-      userName : name,
-      google : null
-    })
-
+      userName: name,
+      google: null,
+      role:selectedOption
+    });
+    // console.log("mera response",response.data)
     userLogin(response.data);
-
-
   }
   return (
     <div>
@@ -37,9 +41,9 @@ function SignUp() {
         <div className="img">
           <img src={akshayLok} alt="logo" />
           <h3>
-          <span className="h3Span" >Distributing Energy</span>
-          <span>Empowering People</span>
-        </h3>
+            <span className="h3Span">Distributing Energy</span>
+            <span>Empowering People</span>
+          </h3>
         </div>
         <main class="main">
           <div class="container">
@@ -66,8 +70,8 @@ function SignUp() {
                     id="email"
                     class="input-field"
                     placeholder="Name"
-                    onChange={(e)=>{
-                      setName(e.target.value)
+                    onChange={(e) => {
+                      setName(e.target.value);
                     }}
                   />
                 </div>
@@ -95,10 +99,16 @@ function SignUp() {
                     id="email"
                     class="input-field"
                     placeholder="Email Address"
-                    onChange={(e)=>{
-                      setEmail(e.target.value)
+                    onChange={(e) => {
+                      setEmail(e.target.value);
                     }}
                   />
+                </div>
+                <div class="input-control">
+                  <select name="role" id="role" class="input-field" value={selectedOption} onChange={handleSelectChange}>
+                    <option value="Corporate">Corporate</option>
+                    <option value="User">User</option>
+                  </select>
                 </div>
                 <div class="input-control">
                   <label for="password" class="input-label" hidden>
@@ -110,8 +120,8 @@ function SignUp() {
                     id="password"
                     class="input-field"
                     placeholder="Password"
-                    onChange={(e)=>{
-                      setPassword(e.target.value)
+                    onChange={(e) => {
+                      setPassword(e.target.value);
                     }}
                   />
                 </div>
@@ -124,8 +134,8 @@ function SignUp() {
                     name="submit"
                     class="input-submit"
                     value="Sign In"
-                    onClick={(e)=>{
-                      handleSubmit(e)
+                    onClick={(e) => {
+                      handleSubmit(e);
                     }}
                   />
                 </div>
