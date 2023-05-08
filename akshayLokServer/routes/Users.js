@@ -7,14 +7,16 @@ router.post("/register", async (req, res) => {
   const userEmail = req.body.email;
   const userPassword = req.body.password;
   const userName = req.body.userName;
-  const google = req.body.google
+  const google = req.body.google;
+  const role = req.body.role;
 
     try {
       const newUser = await User.create({
         name: userName,
         password: userPassword,
         email: userEmail,
-        google: google
+        google: google,
+        role: role
       });
 
       res.status(200).json({
