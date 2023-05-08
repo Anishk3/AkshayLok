@@ -37,7 +37,7 @@ const About = () => {
   let username = "Subham";
   let useremail = "subhamgg162@gmail.com";
 
-  let result = "0x............";
+  let result = "0xedf.........5031";
   let aadharNumber = "123456789";
 
   // console.log(userData);
@@ -184,7 +184,7 @@ const About = () => {
                 paddingTop: "10px",
               }}
             >
-              Recently uploaded Nft
+              Recent Contract
             </p>
             <img src={dnft} style={{ width: "100%" }}></img>
             <div className="nft__content" style={{ width: "80%" }}>

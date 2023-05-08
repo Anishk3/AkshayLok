@@ -61,7 +61,7 @@ const LineChart = () => {
   var data = {
     labels: ['December','January','February','March','April','May'],
     datasets: [{
-      label: 'Amount Earned',
+      label: 'Price',
       data: [12,19,5,5,2,7],
       backgroundColor: [
         'rgba(54, 162, 235, 0.2)',

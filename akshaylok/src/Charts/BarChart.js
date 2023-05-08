@@ -49,7 +49,7 @@ const BarChart = () => {
   var data = {
     labels: ['December','January','February','March','April','May'],
     datasets: [{
-      label: 'Number of NFTs Uploaded',
+      label: 'Revenue Generated',
       data: [12,19,5,5,2,7],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',

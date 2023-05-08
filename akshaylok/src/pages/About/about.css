@@ -97,6 +97,7 @@
   -webkit-backdrop-filter: blur(50px);
   border: 2px solid rgba(255, 255, 255, 0.1) !important;
   padding-top: 10px;
+  width: 420px;
 }
 
 
@@ -124,4 +125,8 @@
 
 .mine2{
   
+}
+
+.part2{
+  padding-left: 30px;
 }
