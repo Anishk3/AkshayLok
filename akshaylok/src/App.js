@@ -33,12 +33,12 @@ function App() {
 
           <Route 
             path='/' 
-            element = { isConnected ? <Loading/> : <Login login={false} /> }> 
+            element = {<Home/> }> 
           </Route>
 
           <Route 
             path='/home'
-            element = { isConnected ? <Home/> : <Login login={false} />}> 
+            element = { isConnected ? <About/> : <Login login={false} />}> 
           </Route>
 
           <Route 
@@ -56,10 +56,10 @@ function App() {
             element = { isConnected ? <StartingPage/> : <Login login={false} /> }> 
           </Route>
 
-          <Route 
+          {/* <Route 
             path='/about' 
             element = { isConnected ? <About/> : <Login login={false} /> }> 
-          </Route>
+          </Route> */}
 
           <Route 
             path='/form' 
