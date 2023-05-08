@@ -5,7 +5,7 @@ import logo from "../../assets/img/logo.png"
 import { Link } from "react-router-dom";
 
 function Navbar({ login }) {
-  
+  console.log("hello",login)
   if (!login) {
     return (
       <>
@@ -44,11 +44,11 @@ function Navbar({ login }) {
                 <span class="bar"></span>
               </div>
               <ul class="nav no-search">
-                <li class="nav-item">
+                {/* <li class="nav-item">
                   <Link className="a" to="/home">Home</Link>
-                </li>
+                </li> */}
                 <li class="nav-item">
-                  <Link className="a" to="/about">About</Link>
+                  <Link className="a" to="/home">Stats</Link>
                 </li>
                 <li class="nav-item">
                   <Link className="a" to="/form">New Connection</Link>
