@@ -23,7 +23,7 @@ function SignUp() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    console.log("diptanshu mkc",name, email, password,selectedOption);
+    // console.log("diptanshu mkc",name, email, password,selectedOption);
 
     const response = await axios.post("/register", {
       email,
@@ -32,7 +32,7 @@ function SignUp() {
       google: null,
       role:selectedOption
     });
-    console.log("mera response",response.data)
+    // console.log("mera response",response.data)
     userLogin(response.data);
   }
   return (
