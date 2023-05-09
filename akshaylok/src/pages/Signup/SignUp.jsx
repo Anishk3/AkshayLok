@@ -11,13 +11,19 @@ function SignUp() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-    const [selectedOption, setSelectedOption] = useState('Corporate');
-  
-    function handleSelectChange(event) {
-      setSelectedOption(event.target.value);
-      setSelectedOption(event.target.value);
-      // console.log("meow",event.target.value)
-    }
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [companyname, setcompanyname] = useState(null);
+
+  function handleSelectChange(event) {
+    setSelectedOption(event.target.value);
+    setSelectedOption(event.target.value);
+    // console.log("meow",event.target.value)
+  }
+  function handleSelectChangeforcompany(event) {
+    setcompanyname(event.target.value);
+    setcompanyname(event.target.value);
+    // console.log("meow",event.target.value)
+  }
   const { userLogin } = useContext(AuthContext);
 
   async function handleSubmit(e) {
@@ -30,7 +36,8 @@ function SignUp() {
       password,
       userName: name,
       google: null,
-      role:selectedOption
+      role: selectedOption,
+      company:companyname
     });
     // console.log("mera response",response.data)
     userLogin(response.data);
@@ -105,11 +112,36 @@ function SignUp() {
                   />
                 </div>
                 <div class="input-control">
-                  <select name="role" id="role" class="input-field" value={selectedOption} onChange={handleSelectChange}>
-                    <option value="Corporate">Corporate</option>
+                  <select
+                    name="role"
+                    id="role"
+                    class="input-field"
+                    value={selectedOption}
+                    onChange={handleSelectChange}
+                  >
+                    <option value="none" selected disabled hidden>
+                      Select User Type
+                    </option>
                     <option value="User">User</option>
+                    <option value="Corporate">Corporate</option>
                   </select>
                 </div>
+                {selectedOption=='Corporate'&&
+                <div class="input-control">
+                  <select
+                    name="role"
+                    id="role"
+                    class="input-field"
+                    value={companyname}
+                    onChange={handleSelectChangeforcompany}
+                  >
+                    <option value="none" selected disabled hidden>
+                      Select Company Name
+                    </option>
+                    <option value="Company 1">Company 1</option>
+                    <option value="Company 2">Company 2</option>
+                  </select>
+                </div>}
                 <div class="input-control">
                   <label for="password" class="input-label" hidden>
                     Password
