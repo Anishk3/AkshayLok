@@ -5,13 +5,16 @@ const UserSchema = new mongoose.Schema(
         name : {
             type : String
         },
+        
         email : {
             type : String
         },
+
         password : {
             type : String,
             default: null
         },
+
         google:{
             type: String,
             default: null
@@ -22,6 +25,11 @@ const UserSchema = new mongoose.Schema(
             default : null
         },
         
+        company : {
+            type: String,
+            default : null
+        },
+
         transactions:{
             type: Array,
             default: []

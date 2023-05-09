@@ -9,6 +9,7 @@ router.post("/register", async (req, res) => {
   const userName = req.body.userName;
   const google = req.body.google;
   const role = req.body.role;
+  const company = req.body.company;
 
     try {
       const newUser = await User.create({
@@ -16,7 +17,8 @@ router.post("/register", async (req, res) => {
         password: userPassword,
         email: userEmail,
         google: google,
-        role: role
+        role: role,
+        company: company
       });
 
       res.status(200).json({
@@ -107,6 +109,7 @@ router.post('/google', async(req, res)=>{
 router.put("/transaction", async (req, res) => {
   const userEmail = req.body.email;
   const newTransaction = req.body.transaction;
+  const company  = req.body.company;
 
   try {
     await User.findOneAndUpdate(
@@ -120,6 +123,7 @@ router.put("/transaction", async (req, res) => {
       }
     );
 
+
     res.status(200).json({
       message: "new transaction added",
     });
@@ -131,7 +135,7 @@ router.put("/transaction", async (req, res) => {
 });
 
 
-
+//GETTING TRANSACTIONS 
 router.get("/transaction", async(req, res)=>{
   const userEmail = req.body.email;
 
